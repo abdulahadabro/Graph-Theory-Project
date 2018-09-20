@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta charset="UTF-8">
+		<title>Graph Theory</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/grapher_icon.jpg" />
+		<script type="text/javascript" src="libs/jquery/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="libs/jquery/jquery-ui.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="app.css" />
+		<link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="mainWrapper">
+		
+		<div id="pageHeader">
+				<div id="siteTitle">
+					<div class="mainTitle">Graph Theory in computer Application</div>
+				</div>
+				
+				<div id="top-menus">
+					<ul id="top-bar-menu">
+						<li id="newMenuBtn" onclick="createNewGraph()">
+							<i class="fa fa-file-o" aria-hidden="true"></i> 
+							<span>New</span>
+						</li>
+						<li id="openMenuBtn" onclick="openNewGraph()">
+							<i class="fa fa-folder-open-o" aria-hidden="true"></i> 
+							<span>Open</span>
+						</li>
+						<li id="saveMenuBtn" onclick="saveGraph()">
+							<i class="fa fa-floppy-o" aria-hidden="true"></i> 
+							<span>Save</span>
+						</li>
+						<li id="addNodeBtn" onclick="addNodeToGraph()">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<span>Add Node</span>
+						</li>
+						<li onclick="evaluateGraph()">
+							<i class="fa fa-play-circle-o" aria-hidden="true"></i> 
+							<span>Figure Out</span>
+						</li>
+						<li onclick="window.close()">
+							<i class="fa fa-times-circle-o" aria-hidden="true"></i> 
+							<span>Close</span>
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		
+		<div id="mainBody">
+			<div id="mainPageContainer"></div>
+		</div>
+	</div>
+	<div id="openFileContainer">
+		<div id="openFileDaialog">
+			<input type="file" id="files" name="files[]" multiple />
+			<div id="drop_zone">or Drop file here</div>
+			<!-- <output id="list"></output> -->
+			<div class="spinner">
+				<div class="loader"></div>
+			</div>
+		</div>
+	</div>
+</html>
